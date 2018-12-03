@@ -1,40 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<head>
-    <meta charset="utf-8">
-    <style>
-        body{
-            font-family: Arial;
-        }
-        article{
-            /*border: 1px solid #000;*/
-            width: 50%;
-            margin:1% 0;
-            text-align: left;
-        }
-        p{
-            font-size:0.9em;
-            margin:1%;
-        }
-        h1{
-            font-size:1.8em;
-        }
-        button{
-            margin-right:0.5%;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Sobre o Kanri ERP</h1>
-    
-    <article>
-        <p>O Kanri ERP é um sistema modular e personalizável de gestão de prestadoras de serviços.</p>
-        <p>Nosso sistema tem o objetivo de aproximar o Fornecedor de Serviços, o Parceiro e os Colaboradores.</p>
-        <p>Pelo Kanri ERP será possível Controlar Chamados, Estoque, Finanças e os Colaboradores.</p>
-    </article>			
-
-    <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit"> <%= link_to 'Administrador', admin_session_path	 %>
-
-    <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit"> <%= link_to 'Gestor', gestor_session_path	 %>	
-
-</body>                
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>

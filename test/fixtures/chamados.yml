@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fornecedor: MyString
+  cliente: MyString
+  site: MyString
+  endereco: MyString
+  bairro: MyString
+  cep: 1
+  cidade: MyString
+  estado: MyString
+  tecnico: MyString
+  data: 2018-12-03
+  numero: 1
+  nfornecedor: 1
+  ncliente: 1
+  observacao: MyText
+
+two:
+  fornecedor: MyString
+  cliente: MyString
+  site: MyString
+  endereco: MyString
+  bairro: MyString
+  cep: 1
+  cidade: MyString
+  estado: MyString
+  tecnico: MyString
+  data: 2018-12-03
+  numero: 1
+  nfornecedor: 1
+  ncliente: 1
+  observacao: MyText

@@ -1,0 +1,87 @@
+<%= form_with(model: chamado, local: true) do |form| %>
+  <% if chamado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chamado.errors.count, "error") %> prohibited this chamado from being saved:</h2>
+
+      <ul>
+      <% chamado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fornecedor %>
+    <%= form.text_field :fornecedor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cliente %>
+    <%= form.text_field :cliente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :site %>
+    <%= form.text_field :site %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco %>
+    <%= form.text_field :endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bairro %>
+    <%= form.text_field :bairro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cep %>
+    <%= form.number_field :cep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cidade %>
+    <%= form.text_field :cidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tecnico %>
+    <%= form.text_field :tecnico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nfornecedor %>
+    <%= form.number_field :nfornecedor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ncliente %>
+    <%= form.number_field :ncliente %>
+  </div>
+
+  <div class="field">
+    <%= form.label :observacao %>
+    <%= form.text_area :observacao %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
