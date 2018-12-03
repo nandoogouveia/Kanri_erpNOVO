@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboard/dashboard'
   get 'inicio/index'
   devise_for :gestors
   devise_for :admins
