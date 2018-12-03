@@ -36,9 +36,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 #BOOTSTRAP
 gem 'bootstrap-sass'
+<<<<<<< HEAD
 
 #JQUERRY
 gem 'jquery-rails'
+=======
+>>>>>>> 9e4b965a6e628959fd3080dfb0c03327c1648ee7
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
