@@ -13,8 +13,12 @@
         	body{
         		font-family:Arial;
         	}
+        	img{
+        		width:100%;
+        		height:auto;
+        	}
         	a{
-            font-size:1em;
+            	font-size:1em;
 	        }
 	        h1{
 	            font-size:1.8em;
@@ -27,14 +31,16 @@
         	ul{
         		padding:0;
         	}
-        	div{
-        		/*border:1px solid #000;*/
+        	#logo{
+        		border:1px solid #000;
         	}
         </style>
 	</head>
 		
 	<body>
-		<%= image_tag 'icon/Logo.png' %>
+		<div id="logo">
+			<%= image_tag 'icon/Logo.png' %>
+		</div>
 		
 		<h1>Bem vindo ao Kanri ERP</h1>
 		
