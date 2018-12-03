@@ -33,35 +33,42 @@
         	}
         	#logo{
         		/*border:1px solid #000;*/
-        		width: 13.1%;
+        		width: 50.6%;
+        	}
+        	main{
+        		width:354px;
+        		border:1px solid #000;
+        		margin: auto;
         	}
         </style>
 	</head>
 		
 	<body>
-		<div id="logo">
-			<%= image_tag 'icon/Logo.png' %>
-		</div>
-		
-		<h1>Bem vindo ao Kanri ERP</h1>
-		
-		<div class="container-fluid">
-			<ul class="nav justify-content-end">
-				<li>
-					<%= link_to 'HOME', root_path, class:"nav-link" %>
-				</li>
-				<li class="nav-item">
-					<%= link_to 'PT', root_path(locale: 'pt-BR'), class:"nav-link" %>
-				</li>
-				<li class="nav-item">
-					<%= link_to 'EN', root_path(locale: 'en'), class:"nav-link" %>
-				</li>
-			</ul>
-		<%= yield %>
-		</div>
-
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
+		<main>
+			<div id="logo">
+				<%= image_tag 'icon/Logo.png' %>
+			</div>
+			
+			<h1>Bem vindo ao Kanri ERP</h1>
+			
+			<div class="container-fluid">
+				<ul class="nav justify-content-end">
+					<li>
+						<%= link_to 'HOME', root_path, class:"nav-link" %>
+					</li>
+					<li class="nav-item">
+						<%= link_to 'PT', root_path(locale: 'pt-BR'), class:"nav-link" %>
+					</li>
+					<li class="nav-item">
+						<%= link_to 'EN', root_path(locale: 'en'), class:"nav-link" %>
+					</li>
+				</ul>
+			<%= yield %>
+			</div>
+	
+			<p class="notice"><%= notice %></p>
+			<p class="alert"><%= alert %></p>
+		</main>
 
 	</body>
 		
