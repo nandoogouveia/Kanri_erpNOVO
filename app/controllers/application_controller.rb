@@ -1,18 +1,12 @@
 class ApplicationController < ActionController::Base
-    before_action :set_locale
-  
-  def index
-  end 
-  
-  def set_locale
-    if params[:locale]
-      cookies[:locale] = params[:locale]
-    end
-    
-    if cookies[:locale]
-      if I18n.locale != cookies[:locale]
-        I18n.locale = cookies[:locale]
-      end
-    end
+
+private
+  def stored_location_for(resource_or_scope)
+    nil
   end
+
+  def after_sign_in_path_for(resource_or_scope)
+    painel_path
+  end
+  
 end

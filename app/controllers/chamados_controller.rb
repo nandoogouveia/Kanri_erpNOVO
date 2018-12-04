@@ -28,7 +28,7 @@ class ChamadosController < ApplicationController
 
     respond_to do |format|
       if @chamado.save
-        format.html { redirect_to @chamado, notice: 'Chamado was successfully created.' }
+        format.html { redirect_to @chamado, notice: 'Chamado salvo com sucesso.' }
         format.json { render :show, status: :created, location: @chamado }
       else
         format.html { render :new }

@@ -1,5 +1,3 @@
-
-
 <h2>Área de login do administrador</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -19,15 +17,3 @@
       <%= f.label :lembrar_me %>
     </div>
   <% end -%>
-
-
-    <div class="actions">
-    <%= f.submit "LOGAR" %>
-  </div>
-  <% end %>
-
-<% end %>
-
-
-
-  <%= render "admins/shared/links" %>

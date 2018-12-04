@@ -13,32 +13,20 @@
 	</head>
 		
 	<body>
-		<main>
-			<div id="logo">
-				<%= image_tag 'icon/Logo.png' %>
-			</div>
-			
-			<h1>Bem vindo ao Kanri ERP</h1>
-			
-			<div class="container-fluid">
-				<ul class="nav justify-content-end">
-					<li>
-						<%= link_to 'HOME', root_path, class:"nav-link" %>
-					</li>
-					<li class="nav-item">
-						<%= link_to 'PT', root_path(locale: 'pt-BR'), class:"nav-link" %>
-					</li>
-					<li class="nav-item">
-						<%= link_to 'EN', root_path(locale: 'en'), class:"nav-link" %>
-					</li>
-				</ul>
-			<%= yield %>
-			</div>
-	
-			<p class="notice"><%= notice %></p>
+		<nav class="navbar navbar-light">
+  			<div class="container-fluid">
+  				<div class="navbar-header">
+   					<%= image_tag 'icon/Logo.png' %>
+   				</div>
+   		 		<ul class="nav navbar-nav">
+   		 			<li><%= link_to 'KanriERP'%></li>
+   			   		<li><%= link_to 'HOME', root_path, class:"nav-link" %></li>
+  				</ul>
+  				<%= yield %>
+ 			</div>
+ 			<p class="notice"><%= notice %></p>
 			<p class="alert"><%= alert %></p>
-		</main>
-
+		</nav>
 	</body>
 		
 </html>

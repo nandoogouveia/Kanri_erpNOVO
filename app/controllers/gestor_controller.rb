@@ -1,3 +1,3 @@
 class GestorController < ApplicationController
-    
+
 end
